@@ -38,10 +38,27 @@ docker run -i -t \
   -w "${WORK_DIR}" \
   -u "${USER_NAME}" \
   -v "${WORK_DIR}:${WORK_DIR}" \
+  -v "${HOME}:${HOME}" \
   ${IMAGE_NAME}-${USER_NAME} \
   bash
 
-#  -v "/home/${USER_NAME}/.m2:/home/${USER_NAME}/.m2" \
+# sudo yum install -y ruby ruby-devel
+# gem install middleman -v 3.4.0
+# gem install rake -v 10.3.1
+# gem install sass -v 3.4.18 
+# gem install eventmachine -v 1.0.8 
+# gem install http_parser.rb -v 0.6.0 
+# gem install em-websocket -v 0.5.1 
+# gem install kramdown -v 1.8.0 
+# gem install rack-livereload -v 0.3.16 
+# gem install middleman-livereload -v 3.1.1 
+# gem install rouge -v 1.10.1 
+# gem install specific_install
+# gem specific_install https://github.com/middleman/middleman-syntax.git
+# ~/.gem/ruby/gems/bundler-1.10.6/bin/bundle install
+# gem install redcarpet
+
+# ~/.gem/ruby/gems/middleman-core-3.4.0/bin/middleman build
 
 popd
 
