@@ -38,9 +38,10 @@ docker run -i -t \
   -w "${WORK_DIR}" \
   -u "${USER_NAME}" \
   -v "${WORK_DIR}:${WORK_DIR}" \
-  -v "${HOME}:${HOME}" \
   ${IMAGE_NAME}-${USER_NAME} \
   bash
+
+#   -v "${HOME}:${HOME}" \
 
 # sudo yum install -y ruby ruby-devel
 # gem install middleman -v 3.4.0
